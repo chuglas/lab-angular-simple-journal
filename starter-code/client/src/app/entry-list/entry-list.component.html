@@ -1,0 +1,9 @@
+<p>
+  entry-list works!
+</p>
+
+<ul>
+  <li *ngFor="let entry of entries">
+    <a [routerLink]="['entry', entry._id]">{{entry.title}} | {{entry.date}}</a>
+  </li>
+</ul>
